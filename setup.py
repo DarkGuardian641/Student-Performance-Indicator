@@ -15,7 +15,9 @@ def get_requirements(file_path:str)->List[str]:
         requirements = [req.replace("\n"," ") for req in requirements]
 
         if E_DOT in requirements:
-            requirements.remove{E_DOT}
+            requirements.remove(E_DOT)
+    
+    return requirements
 
 setup(
     name="mlproject",
